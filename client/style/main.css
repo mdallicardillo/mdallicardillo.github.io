@@ -1,0 +1,91 @@
+body{
+    background-color:#f4f4f4;
+    color:#555555;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:16px;
+    line-height:1.3em;
+    margin:0;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+#mainHeader{
+    background-color:#333333;
+    color:#ffffff;
+}
+
+#navBar{
+    background-color:#333;
+    color:#ffffff;
+}
+
+#navBar ul{
+    padding:0;
+}
+
+#navBar li{
+    display:inline;
+}
+
+#navBar a{
+    color:white;
+    text-decoration: none;
+    font-size:18px;
+    padding-right:15px;
+}
+
+#showcase{
+    background-image:url('../../img/old-vise.jpg');
+    background-position:center center;
+    background-size:700px;
+    background-repeat:no-repeat;
+    min-height:400px;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+#showcase h1{
+    color:white;
+    font-size:25px;
+    line-height:1.6em;
+    padding-top:30px;
+}
+
+#mainSection{
+    float:left;
+    width:70%;
+    padding: 0 30px;
+    box-sizing:border-box;
+}
+
+#sideBar{
+    float:right;
+    width:30%;
+    background:#333333;
+    color:#ffffff;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+#mainFooter{
+    background:#333333;
+    color:#ffffff;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:600px){
+    #mainSection{
+        width:100%;
+        float:none;
+    }
+    #sideBar{
+        width:100%;
+        float:none;
+    }
+}
