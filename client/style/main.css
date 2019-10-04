@@ -3,19 +3,34 @@ body{
     color:#555555;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:16px;
-    line-height:1.3em;
+    line-height:1.2em;
     margin:0;
 }
 
 .container{
-    width:80%;
+    width:90%;
     margin:auto;
     overflow:hidden;
+}
+
+.postPreview{
+    width:49%;
+    float: left;
+    margin: 1px;
+    box-sizing: border-box;
+    border: 3px solid #333;
+    border-radius: 10px;
+    max-height:250px;
+}
+
+.postPreview *{
+    padding:0px 5px;
 }
 
 #mainHeader{
     background-color:#333333;
     color:#ffffff;
+    text-align:center;
 }
 
 #navBar{
@@ -41,7 +56,7 @@ body{
 #showcase{
     background-image:url('../../img/old-vise.jpg');
     background-position:center center;
-    background-size:700px;
+    background-size:cover;
     background-repeat:no-repeat;
     min-height:400px;
     margin-bottom:30px;
@@ -69,13 +84,14 @@ body{
     color:#ffffff;
     padding:10px;
     box-sizing: border-box;
+    border-radius:10px;
 }
 
 #mainFooter{
     background:#333333;
     color:#ffffff;
     text-align:center;
-    padding:20px;
+    padding:10px;
     margin-top:40px;
 }
 
@@ -85,6 +101,11 @@ body{
         float:none;
     }
     #sideBar{
+        width:100%;
+        float:none;
+    }
+
+    .postPreview{
         width:100%;
         float:none;
     }
