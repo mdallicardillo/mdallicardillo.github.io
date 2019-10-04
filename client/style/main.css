@@ -1,10 +1,14 @@
+html{
+    height:100%;
+}
+
 body{
     background-color:#7e7e7e;
     color:#888;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:16px;
     line-height:1.2em;
-    min-height:100%;
+    height:100%;
     margin:0;
 }
 
@@ -12,6 +16,11 @@ body{
     width:90%;
     margin:auto;
     overflow:hidden;
+}
+
+.content{
+    min-height:100%;
+    
 }
 
 .headNav{
@@ -34,7 +43,8 @@ body{
     background-color:#333;
     color:#ffffff;
     float:right;
-    width:35%;
+    text-align:right;
+    min-width:15%;
 }
 
 #navBar ul{
@@ -123,6 +133,7 @@ body{
     text-align:center;
     width:100%;
     bottom:0px;
+    left:0px;
     position:absolute;
 }
 
