@@ -1,14 +1,14 @@
 html{
-    height:100%;
+    min-height:100%;
 }
 
 body{
-    background-color:#7e7e7e;
+    background-image: linear-gradient( #f4f4f4, #5e3e2d);
     color:#888;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:16px;
     line-height:1.2em;
-    height:100%;
+    min-height:100%;
     margin:0;
 }
 
@@ -24,24 +24,21 @@ body{
 }
 
 .headNav{
-    background-color:#333;
-    position:fixed;
+    background-color:#5e3e2d;
     margin-left:5%;
     border-radius: 0px 0px 15px 15px;
+    line-height:1.6em;
 }
 
 #mainHeader{
-    background-color:#333333;
-    color:#ffffff;
+    color:#999;
     float:left;
     padding-left:15px;
     width:55%;
-    line-height:1.6rem;
+    
 }
 
 #navBar{
-    background-color:#333;
-    color:#ffffff;
     float:right;
     text-align:right;
     min-width:15%;
@@ -53,18 +50,20 @@ body{
 
 #navBar li{
     display:inline;
+    min-height:100%;
 }
 
 #navBar a{
-    color:white;
+    color:#666;
     text-decoration: none;
     font-size:18px;
     padding:15px;
+    height:100%
 }
 
 #navBar a:hover{
     /* color:lightslategray; */
-    background-color:lightslategrey;
+    background-color:#778899;
 }
 
 #navBar a:active{
@@ -77,8 +76,8 @@ body{
     background-size:cover;
     background-repeat:no-repeat;
     border-radius:15px;
-    min-height:400px;
-    margin:73px 0px 15px 0px;
+    min-height:450px;
+    margin:5px 0px 15px 0px;
     text-align:center;
 }
 
@@ -109,13 +108,15 @@ body{
 
 .postPreview{
     background:#f4f4f4;
+    color:#333;
     width:49%;
     float: left;
-    margin: .25%;
+    margin: .5%;
     box-sizing: border-box;
     border: 3px solid #333;
     border-radius: 15px;
-    max-height:250px;
+    max-height:200px;
+    overflow:hidden;
 }
 
 .postPreview *{
@@ -125,16 +126,47 @@ body{
 #div_footer{
     position:relative;
     margin-top:70px;
+    height:250px;
 }
 
-#footer_content{
-    background:#333;
+/* #footer_content{
     color:#fff;
-    text-align:center;
     width:100%;
+    height:200px;
     bottom:0px;
     left:0px;
     position:absolute;
+} */
+
+#footer_copyright{
+    background:#778899;
+    color:#fff;
+    text-align:center;
+    width:100%;
+    height:50px;
+    bottom:0px;
+    left:0px;
+    position:absolute;
+}
+
+@media(max-width:880px){
+    #navBar{
+        width:100%;
+        float:none;
+        text-align: center;
+    }
+
+    #mainHeader{
+        width:100%;
+        float:none;
+        padding-left:0px;
+        text-align: center;
+    }
+    
+    /* Use this is setting the header for position:fixed; */
+    /* #showcase{
+        margin-top:114px
+    } */
 }
 
 @media(max-width:600px){
@@ -151,18 +183,5 @@ body{
         width:100%;
         float:none;
         margin:0%;
-    }
-
-    #navBar{
-        width:100%;
-        float:none;
-        text-align: center;
-    }
-
-    #mainHeader{
-        width:100%;
-        float:none;
-        padding-left:0px;
-        text-align: center;
     }
 }
