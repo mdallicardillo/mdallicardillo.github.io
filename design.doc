@@ -1,0 +1,28 @@
+
+================ Home Page:
+
+Signature logo in top left, nav menu top right (eventually collapse into "hamburger" menu for narrow windows.)
+
+Showcase area, round portrait of self, 
+
+Blog previews -- Dynamically created using javascript and a preview.JSON file popuated with the most recent articles
+
+Social Media links
+
+Copyright
+
+================ Blog Page:
+
+Same header (indicating blog is selected)
+
+In place of showcase image display grid of image links to article categories (When there are actually enough posts to justify such, otherwise just display some image).  Manage categories identically to article previews with a JSON file of categories.
+
+Either have previews of categories and latest articles from each category with an option to go to a category specific page with the latest articles and previews below it OR have each category section show all articles for the category with links to the full articles
+
+socal media links
+
+copyright
+
+================ About Page:
+
+Picture of me and a few paragraphs of interests, motivations and aspirations.  Much of this is uncertain...

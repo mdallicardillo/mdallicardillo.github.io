@@ -3,9 +3,9 @@ html{
 }
 
 body{
-    background-image: linear-gradient( #f4f4f4, #5e3e2d);
+    background-image: linear-gradient( #4b3a26be, #4b3a26);
     color:#888;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:Arial, Helvetica, sans-serif;
     font-size:16px;
     line-height:1.2em;
     min-height:100%;
@@ -13,9 +13,13 @@ body{
 }
 
 .container{
-    width:90%;
+    /* width:90%; */
     margin:auto;
     overflow:hidden;
+}
+
+.postPreviewSection{
+    background:#778899
 }
 
 .content{
@@ -24,14 +28,14 @@ body{
 }
 
 .headNav{
-    background-color:#5e3e2d;
-    margin-left:5%;
-    border-radius: 0px 0px 15px 15px;
+    background-color:#4b3a26;
+    /* margin-left:5%; */
+    /* border-radius: 0px 0px 15px 15px; */
     line-height:1.6em;
 }
 
 #mainHeader{
-    color:#999;
+    color:#f4f4f4;
     float:left;
     padding-left:15px;
     width:55%;
@@ -39,9 +43,11 @@ body{
 }
 
 #navBar{
+    /* background:black; */
     float:right;
     text-align:right;
     min-width:15%;
+    height:50px;
 }
 
 #navBar ul{
@@ -50,15 +56,14 @@ body{
 
 #navBar li{
     display:inline;
-    min-height:100%;
 }
 
 #navBar a{
-    color:#666;
+    color:#f4f4f4;
     text-decoration: none;
     font-size:18px;
-    padding:15px;
-    height:100%
+    padding:15px 20px;
+    border: 1px solid #778899;
 }
 
 #navBar a:hover{
@@ -89,7 +94,7 @@ body{
 }
 
 #mainSection{
-    color:black;
+    color:#333333;
     float:left;
     width:70%;
     padding: 0 30px;
@@ -99,8 +104,8 @@ body{
 #sideBar{
     float:right;
     width:30%;
-    background:#333333;
-    color:#ffffff;
+    background:#778899;
+    color:#f4f4f4;
     padding:10px;
     box-sizing: border-box;
     border-radius:10px;
@@ -113,14 +118,41 @@ body{
     float: left;
     margin: .5%;
     box-sizing: border-box;
-    border: 3px solid #333;
+    border: 3px solid #778899;
     border-radius: 15px;
     max-height:200px;
     overflow:hidden;
 }
 
 .postPreview *{
-    padding:0px 5px;
+    padding:0px 8px;
+    margin:0;
+}
+
+.postPreview a{
+    color:#333333;
+    text-decoration:none;
+}
+
+.postPreview a:hover{
+    color:#778899;
+}
+
+.postPreview h2{
+    margin:-5px 0px -15px 0px;
+}
+
+.postPreview h3{
+    color:#666666;
+}
+
+.postPreview time{
+    color:#777777;
+    font-size:12px;
+}
+
+.postPreview p{
+    margin:5px 0px;
 }
 
 #div_footer{
@@ -139,7 +171,7 @@ body{
 } */
 
 #footer_copyright{
-    background:#778899;
+    background:#4b3a26;
     color:#fff;
     text-align:center;
     width:100%;
@@ -147,6 +179,12 @@ body{
     bottom:0px;
     left:0px;
     position:absolute;
+}
+
+@media(min-width:1000px){
+    .container{
+        width:90%;
+    }
 }
 
 @media(max-width:880px){
