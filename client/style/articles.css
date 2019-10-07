@@ -1,0 +1,52 @@
+
+.articlePreview{
+    background:#f4f4f4;
+    color:#333;
+    width:49%;
+    float: left;
+    margin: .5%;
+    box-sizing: border-box;
+    border: 3px solid #778899;
+    /* border-radius: 15px; */
+    max-height:200px;
+    overflow:hidden;
+}
+
+.articlePreview *{
+    padding:0px 8px;
+    margin:0;
+}
+
+.articlePreview a{
+    color:#333333;
+    text-decoration:none;
+}
+
+.articlePreview a:hover{
+    color:#778899;
+}
+
+.articlePreview h2{
+    margin:-5px 0px -15px 0px;
+}
+
+.articlePreview h3{
+    color:#666666;
+}
+
+.articlePreview time{
+    color:#777777;
+    font-size:12px;
+}
+
+.articlePreview p{
+    margin:5px 0px;
+}
+
+@media(max-width:600px){
+    .articlePreview{
+        width:100%;
+        float:none;
+        margin:1% 0% 1% 0%;
+    }
+}

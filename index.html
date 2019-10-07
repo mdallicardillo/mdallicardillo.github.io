@@ -1,77 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Matt's Site | Welcome</title>
-    <link rel="stylesheet" type="text/css" href="client/style/main.css">
-</head>
-<body>
-    <div class="container headNav">
-        <header id="mainHeader">
-            
-                <h1>My Name is Matt Dallicardillo</h1>
-            
-        </header>
-        <nav id="navBar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blog.html">Articles</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="content">
-    
-        <!-- <div class="container">
-            <section id="showcase">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem maxime sint aliquam debitis repellendus ad.</h1>
-            </section>
-        </div> -->
-        <div class="container">
-            <section id="mainSection">
-                <h1>Welcome</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil illum aperiam porro unde! Minima illum aliquid similique dolor, voluptate odio! Tenetur natus enim explicabo autem voluptates adipisci, quas voluptate non.</p>
-            </section>
-            <aside id="sideBar">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aspernatur itaque blanditiis accusantium? Unde id ea eveniet cupiditate recusandae minus.</p>
-            </aside>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Matt's Site | Welcome</title>
+        <link rel="stylesheet" type="text/css" href="client/style/main.css">
+        <link rel="stylesheet" type="text/css" href="client/style/header.css">
+        <link rel="stylesheet" type="text/css" href="client/style/footer.css">
+        <link rel="stylesheet" type="text/css" href="client/style/articles.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="/client/script/articles.js"></script>
+        <script src="/client/script/common.js"></script>
+        <script src="./home.js"></script>
+    </head>
+    <body class="home" onload="javascript:renderArticlePreviews(4);">
+        <div id="div_headNav" class="container">
         </div>
-        <div class="container postPreviewSection">
-            <article class="postPreview">
-                <a href="20191003.html"><h2><em>A Website From Scratch...</em></h2></a>
-                <h3>My take on "coding" a site over "building" one.</h3>
-                <time datetime="10-3-2019">OCT 3, 2019</time>
-                <p>As I type this, I have been working as a full stack developer for just about seven years now.  Contrary to what you might think given that timespan, the website you are currently reading is the first I've ever created from scratch.</p>
-            </article>
-            <article class="postPreview">
-                <a href="20191003.html"><h2><em>A Website From Scratch...</em></h2></a>
-                <h3>My take on "coding" a site over "building" one.</h3>
-                <time datetime="10-3-2019">OCT 3, 2019</time>
-                <p>As I type this, I have been working as a full stack developer for just about seven years now.  Contrary to what you might think given that timespan, the website you are currently reading is the first I've ever created from scratch.</p>
-            </article>
-            <article class="postPreview">
-                <a href="20191003.html"><h2><em>Website From Scratch...</em></h2></a>
-                <h3>My take on "coding" a site over "building" one.</h3>
-                <time datetime="10-3-2019">OCT 3, 2019</time>
-                <p>As I type this, I have been working as a full stack developer for just about seven years now.  Contrary to what you might think given that timespan, the website you are currently reading is the first I've ever created from scratch.</p>
-            </article>
-            <article class="postPreview">
-                <a href="20191003.html"><h2><em>WebsiteFrom Scratch...</em></h2></a>
-                <h3>My take on "coding" a site over "building" one.</h3>
-                <time datetime="10-3-2019">OCT 3, 2019</time>
-                <p>As I type this, I have been working as a full stack developer for just about seven years now.  Contrary to what you might think given that timespan, the website you are currently reading is the first I've ever created from scratch.</p>
-            </article>
+        <div class="div_content">
+        
+            <!-- <div class="container">
+                <section id="showcase">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem maxime sint aliquam debitis repellendus ad.</h1>
+                </section>
+            </div> -->
+            <div class="container">
+                <section id="section_main">
+                    <h1>Welcome</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil illum aperiam porro unde! Minima illum aliquid similique dolor, voluptate odio! Tenetur natus enim explicabo autem voluptates adipisci, quas voluptate non.</p>
+                </section>
+                <aside id="aside_main">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aspernatur itaque blanditiis accusantium? Unde id ea eveniet cupiditate recusandae minus.</p>
+                </aside>
+            </div>
+            <div id="div_articlePreviews" class="container">
+            </div>
         </div>
-    </div>
-    <div id="div_footer">
-        <footer id="footer_content">
-        </footer>
-        <footer id="footer_copyright">
-            <p>Copyright &copy;2019 Matt's Website</p>
-        </footer>
-    </div>
-</body>
+        <div id="div_footer">
+        </div>
+    </body>
 </html>

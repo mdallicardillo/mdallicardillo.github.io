@@ -1,0 +1,25 @@
+#div_footer{
+    position:relative;
+    margin-top:70px;
+    height:250px;
+}
+
+/* #footer_content{
+    color:#fff;
+    width:100%;
+    height:200px;
+    bottom:0px;
+    left:0px;
+    position:absolute;
+} */
+
+#footer_copyright{
+    background:#4b3a26;
+    color:#fff;
+    text-align:center;
+    width:100%;
+    height:50px;
+    bottom:0px;
+    left:0px;
+    position:absolute;
+}
