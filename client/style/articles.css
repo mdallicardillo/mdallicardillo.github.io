@@ -1,50 +1,66 @@
-
-.articlePreview{
-    background:#f4f4f4;
-    color:#333;
+.article_preview{
+    /* background:#f4f4f4; */
+    color:#f4f4f4;
     width:49%;
     float: left;
     margin: .5%;
     box-sizing: border-box;
-    border: 3px solid #778899;
+    /* border: 3px solid #778899; */
     /* border-radius: 15px; */
-    max-height:200px;
-    overflow:hidden;
+    /* max-height:200px; */
+    /* overflow:hidden; */
 }
 
-.articlePreview *{
-    padding:0px 8px;
+
+.div_previewImage{
+    /* width:100%; */
+    float:left;
+}
+
+.div_previewImage img{
+    width:100%;
+}
+
+.div_previewText{
+    width:100%;
+    float:left;
+}
+
+.article_preview *{
+    /* padding:0px 8px; */
     margin:0;
 }
 
-.articlePreview a{
-    color:#333333;
+.article_preview a{
+    color:#f4f4f4;
     text-decoration:none;
 }
 
-.articlePreview a:hover{
+.article_preview a:hover{
     color:#778899;
 }
 
-.articlePreview h2{
-    margin:-5px 0px -15px 0px;
+.article_preview h2{
+    font-size:20px;
+    /* margin:-5px 0px -15px 0px; */
 }
 
-.articlePreview h3{
+.article_preview h3{
     color:#666666;
 }
 
-.articlePreview time{
+.article_preview time{
     color:#777777;
     font-size:12px;
 }
 
-.articlePreview p{
-    margin:5px 0px;
+.article_preview p{
+    font-size:14px;
+    /* margin:5px 0px; */
 }
 
 @media(max-width:600px){
-    .articlePreview{
+    .article_preview{
         width:100%;
         float:none;
         margin:1% 0% 1% 0%;

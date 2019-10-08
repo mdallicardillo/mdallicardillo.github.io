@@ -8,13 +8,22 @@ function retrieveArticlePreviews(articlesToShow) {
             if(oArticle != undefined)
             {
                 let htmlArticle =
-                `<article class="articlePreview">
-                    <a href=${oArticle.folder}><h2><em>${oArticle.title}</em></h2></a>
-                    <h3>${oArticle.subtitle}</h3>
-                    <time datetime="${oArticle.date}">${new Date(oArticle.date).toDateString()}</time>
+                `<article class="article_preview">
+                <div class="div_previewImage">
+                    <a href="${oArticle.folder}"><img src="${oArticle.showcase}"/>
+                </div>
+                <div class="div_previewText">
+                    <a href="${oArticle.folder}"><h2><em>${oArticle.title}</em></h2></a>
                     <p>${oArticle.body}</p>
+                </div>
                 </article>`;
                 
+                // additional fields for template literal if desired.
+                // <a href=${oArticle.folder}><h2><em>${oArticle.title}</em></h2></a>
+                //     <h3>${oArticle.subtitle}</h3>
+                //     <time datetime="${oArticle.date}">${new Date(oArticle.date).toDateString()}</time>
+                //     <p>${oArticle.body}</p>
+
                 if (htmlArticles === undefined) {htmlArticles = htmlArticle;}
                 else {htmlArticles = htmlArticles + htmlArticle;}
             }
