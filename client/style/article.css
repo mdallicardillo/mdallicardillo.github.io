@@ -1,9 +1,11 @@
-.div_content{
+@media(min-width:512px){
+    .div_content{
     display:flex;
     align-items:flex-start;
     justify-content: space-between;
     flex-wrap:wrap;
     /* border:1px solid black; */
+}
 }
 
 #aside_previews{
@@ -28,9 +30,9 @@
     border-radius:12px;
     }
 
-#div_mainText{
+/* #div_mainText{
 
-}
+} */
 
 .article_preview{
     flex-basis:100%;
