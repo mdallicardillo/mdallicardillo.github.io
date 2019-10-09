@@ -4,8 +4,11 @@ $(function(){
     $("#div_footer").load("/components/footer.html");
 });
 
-function renderArticlePreviews(numberOfArticles) {
+function renderArticlePreviews(numberOfArticles, articleID) {
+    document.getElementById("div_articlePreviews").innerHTML = retrieveArticlePreviews(numberOfArticles, articleID);
+}
 
-
-    document.getElementById("div_articlePreviews").innerHTML = retrieveArticlePreviews(numberOfArticles);
+function renderArticlePage(numberOfArticles, articleID, path) {
+    document.getElementById("div_articlePreviews").innerHTML = retrieveArticlePreviews(numberOfArticles, articleID);
+    document.getElementById("article_main").innerHTML = retrieveMainArticle(path);
 }

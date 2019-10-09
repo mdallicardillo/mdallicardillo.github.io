@@ -1,0 +1,39 @@
+.div_content{
+    display:flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    /* border:1px solid black; */
+}
+
+#aside_previews{
+    flex-basis:34%;
+    border:3px solid #778899;
+    border-radius:12px;
+    padding:5px;
+}
+
+#article_main{
+    flex-basis:64%;
+    /* border:1px solid black */
+}
+
+#div_mainImage{
+    /* width:95%; */
+    margin:auto;
+}
+#div_mainImage img{
+    width:100%;
+    margin:auto;
+    border-radius:12px;
+    }
+
+#div_mainText{
+
+}
+
+.article_preview{
+    flex-basis:100%;
+    /* border:1px solid black; */
+}
+

@@ -2,7 +2,7 @@
     "articles": [
         {
             "id":4,
-            "folder":"articles/website-from-scratch/",
+            "folder":"/articles/website-from-scratch/",
             "showcase":"/img/early-code-screencap.png",
             "date":"2019-10-16",
             "title":"A Website From Scratch...",
@@ -12,7 +12,7 @@
         },
         {
             "id":3,
-            "folder":"articles/most-recent-title/",
+            "folder":"/articles/most-recent-title/",
             "showcase":"/img/coming-soon.png",
             "date":"10-12-2019",
             "title":"Most Recent Title",
@@ -21,7 +21,7 @@
         },
         {
             "id":2,
-            "folder":"articles/second-article-title/",
+            "folder":"/articles/second-article-title/",
             "showcase":"/img/coming-soon.png",
             "date":"10-06-2019",
             "title":"Second Article Title",
@@ -30,7 +30,7 @@
         },
         {
             "id":1,
-            "folder":"articles/first-article-title/",
+            "folder":"/articles/first-article-title/",
             "showcase":"/img/coming-soon.png",
             "date":"10-01-2019",
             "title":"First Article Title",
