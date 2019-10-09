@@ -4,7 +4,7 @@ html{
 
 body{
     background-image: linear-gradient( #4b3a26be, #4b3a26);
-    color:#888;
+    color:#f4f4f4;
     font-family:Arial, Helvetica, sans-serif;
     font-size:16px;
     line-height:1.2em;
@@ -24,7 +24,8 @@ body{
 
 .div_content{
     min-height:100%;
-    
+    width:95%;
+    margin:auto;
 }
 
 #showcase{
@@ -46,7 +47,7 @@ body{
 }
 
 #section_main{
-    color:#333333;
+    /* color:#333333; */
     float:left;
     width:70%;
     padding: 0 30px;
@@ -66,7 +67,6 @@ body{
 
 @media(min-width:1000px){
     .container{
-        width:90%;
         max-width:1100px;
     }
 }
