@@ -1,13 +1,3 @@
-@media(min-width:512px){
-    .div_content{
-    display:flex;
-    align-items:flex-start;
-    justify-content: space-between;
-    flex-wrap:wrap;
-    /* border:1px solid black; */
-}
-}
-
 #aside_previews{
     flex-basis:34%;
     border:3px solid #778899;
@@ -17,6 +7,7 @@
 
 #article_main{
     flex-basis:64%;
+    padding:10px 0px;
     /* border:1px solid black */
 }
 
@@ -39,3 +30,12 @@
     /* border:1px solid black; */
 }
 
+@media(min-width:512px){
+    .div_content{
+    display:flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    /* border:1px solid black; */
+}
+}
