@@ -21,9 +21,19 @@
     border-radius:12px;
     }
 
-/* #div_mainText{
-
-} */
+#div_mainText p{
+    padding:7px 0px;
+}
+#div_mainText h2{
+    font-size:36px;
+    line-height:.8em;
+    padding:10px 0px;
+    /* margin:25px 0px; */
+    color:#222222;
+}
+#div_mainText h3,time{
+    color:#bebebe;
+}
 
 .article_preview{
     flex-basis:100%;

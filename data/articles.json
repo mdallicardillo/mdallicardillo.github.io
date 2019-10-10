@@ -7,8 +7,8 @@
             "date":"2019-10-16",
             "title":"A Website From Scratch...",
             "category":"Development",
-            "subtitle":"My take on \"coding\" a site over \"building\" one.",
-            "body":"As I type this, I have been working as a full stack developer for just about seven years now.  Contrary to what you might think given that timespan, the website you are currently reading is the first I've ever created from scratch."
+            "subtitle":"The origin story of this website.",
+            "body":"<p>As I type this, I have been working as a software developer for just about seven years now.  I have worked on many successful projects utilizing a variety of technologies.  As far as I know my clients have always been satisfied with the solutions I have delivered.  Despite my successful career, I have always had it in the back of my mind that I have neglected to do something important...</p><p>I've never built a website!</p><p>Now, I'm not saying that I have never <strong>worked on</strong> a website before.  I do that almost every day.  What I mean is that I have never sat down with empty folder and created that very first index.html file.  Some part of me has always felt that I <i>had</i> to create something from scratch in this manner.  It hasn't come up in the course of my work, and I don't expect it to, not when sites like Wix and WordPress make it a simple point-and-click affair to get a site up and running.</p><p>So, when I found myself interested in writing a blog, the idea of creating it from scratch bubbled to the surface.  It didn't take hold immediately however...</p><p>I took a look at WordPress first, created a site on the free tier (I am what you might call <q>frugal</q>, or maybe a cheap SOB.  Take your pick.) and I wasn't all that impressed.  It felt so limiting.  If you can imagine, it was like taking away my motorcycle and replacing it with my toddlers bike, training wheels and all.  I didn't want that, I wanted as much control as possible, <i>without</i> paying for it of course.</p><p>Now, I want to be perfectly clear.  <strong>I am NOT an expert on WordPress.</strong>  I'm barely even acquainted.  You might be saying that I didn't even give WordPress a real chance, and that I couldn't possibly know if it was actually limiting or not, and you'd be right.  I didnt give WordPress a real chance. I  knew as soon as I started looking into it that I simply didn't feel like learning how to do it their way.  What WordPress would have likely saved me is time.  It would have however, robbed me of satisfaction.</p><p>Another revelation that might sound strange to you... this is the first development project that I have ever taken it upon myself to build.  In the past I have found my creative outlets in places far from the skillset of my day job.  Working on and riding my motorcycle, renovating my house, restoring old tools, woodworking, all a far cry from what pays the bills.  The idea of building this website/blog is the first thing that drew me to the computer after hours with a desire to create, and it has been some of the most enjoyable work of this type that I have done.</p><p>So, this is the origin story of this site.  As I write this, my first post, the site isn't even close to what I would consider complete.  The layout is constantly evolving, the color scheme is highly questionable, and most of the links do nothing because I've spent so much time architecting and re-architecting the structure and function of the site that it's all I can do to refine the three pages that currently exist.  If you've made it this far, I'd really like to <strong>thank you for reading!</strong>  I don't know when I'll find the time to write another post between improving the site itself and the rest of my life, but I hope by then it looks better than this...</p>"
         },
         {
             "id":3,
@@ -17,7 +17,7 @@
             "date":"10-12-2019",
             "title":"Most Recent Title",
             "subtitle":"Let's change this subtitle just for the heck of it.",
-            "body":"This is my most recent article and it is really a doozy.  All of these have been written to test a simple JSON \"database\" that will allow me to manage my posts and other content dynamically!"
+            "body":"<p>This is my most recent article and it is really a doozy.  All of these have been written to test a simple JSON \"database\" that will allow me to manage my posts and other content dynamically!</p>"
         },
         {
             "id":2,
@@ -26,7 +26,7 @@
             "date":"10-06-2019",
             "title":"Second Article Title",
             "subtitle":"For a bit more description, here's a Subtitle",
-            "body":"This is the body of another article that I've written.  This one definitely has some good information and I hope you use it well!  I'm really giving this my all and I am enjoying myself."
+            "body":"<p>This is the body of another article that I've written.  This one definitely has some good information and I hope you use it well!  I'm really giving this my all and I am enjoying myself.</p>"
         },
         {
             "id":1,
@@ -35,6 +35,6 @@
             "date":"10-01-2019",
             "title":"First Article Title",
             "subtitle":"For a bit more description, here's a Subtitle",
-            "body":"This is the body of an article that I've written.  It has a lot of good information in it and I hope it will help you while you are doing some activity that this article is about."
+            "body":"<p>This is the body of an article that I've written.  It has a lot of good information in it and I hope it will help you while you are doing some activity that this article is about.</p>"
         }
 ]}

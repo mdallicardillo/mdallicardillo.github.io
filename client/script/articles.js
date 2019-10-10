@@ -14,7 +14,7 @@ function retrieveArticlePreviews(articlesToShow, articleID) {
                 </div>
                 <div class="div_previewText">
                     <a href="${oArticle.folder}"><h2><em>${oArticle.title}</em></h2></a>
-                    <p>${oArticle.body}</p>
+                    <p>${oArticle.body.substring(3, 150) + "..."}</p>
                 </div>
                 </article>`;
                 
@@ -46,10 +46,10 @@ function retrieveMainArticle(path) {
                     <img src="${oArticle.showcase}"/>
                 </div>
                 <div id="div_mainText">
-                    <h2><em>${oArticle.title}</em></h2>
-                    <h3>${oArticle.subtitle}</h3>
+                    <h2>${oArticle.title}</h2>
+                    <h3><em>${oArticle.subtitle}</em></h3>
                     <time datetime="${oArticle.date}">${new Date(oArticle.date).toDateString()}</time>
-                    <p>${oArticle.body}</p>
+                    ${oArticle.body}
                 </div>
                 </article>`;
 
