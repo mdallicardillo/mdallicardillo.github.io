@@ -35,26 +35,41 @@ function retrieveArticlePreviews(articlesToShow, articleID) {
 function retrieveMainArticle(path) {
     let htmlArticles;
     $.getJSON('/data/articles.json', function(data){
-        let objArticles = data.articles;
+        let oArticles = data.articles;
 
-        for (i=0; i < objArticles.length; i++) {
-            let oArticle = objArticles[i];
+        for (i=0; i < oArticles.length; i++) {
+            let oArticle =  oArticles[i];
+            let oImages = oArticle.images;
+            let oBodyElements = oArticle.bodyElements;
+
             if(oArticle != undefined && oArticle.folder == path)
             {
                 let htmlArticle =`
                 <div id="div_mainImage">
-                    <img src="${oArticle.showcase}"/>
+                    <img src="${oImages[0].src}" alt="${oImages[0].caption}"/>
                 </div>
                 <div id="div_mainText">
                     <h2>${oArticle.title}</h2>
                     <h3><em>${oArticle.subtitle}</em></h3>
-                    <time datetime="${oArticle.date}">${new Date(oArticle.date).toDateString()}</time>
-                    ${oArticle.body}
-                </div>
-                </article>`;
+                    <time datetime="${oArticle.date}">${new Date(oArticle.date).toDateString()}</time>`;
+                
+                    let img_count = 1;
+                for (n=0; n < oBodyElements.length; n++)
+                {
+                    oBodyElement = oBodyElements[n]
+
+                    if(oBodyElement.type === "p") htmlArticle += `<p>${oBodyElement.contents}</p>`; 
+                    else if (oBodyElement.type === "img")
+                    {
+                        htmlArticle += `<img src="${oImages[img_count].src}">`;
+                        img_count += 1;
+                    } 
+                }
+                    // ${oArticle.body}
+                htmlArticle += `</div></article>`;
 
                 if (htmlArticles === undefined) {htmlArticles = htmlArticle;}
-                else {htmlArticles = htmlArticles + htmlArticle;}
+                else {htmlArticles += htmlArticle;}
             }
         }
         document.getElementById("article_main").innerHTML = htmlArticles;

@@ -50,6 +50,12 @@
 #nav_main a:hover{
     /* color:lightslategray; */
     background-color:#778899;
+    transition: ease-in .5s;
+}
+
+#nav_main a:hover{
+    /* color:lightslategray; */
+    background-color:#778899;
 }
 
 /* #nav_main a:active{
