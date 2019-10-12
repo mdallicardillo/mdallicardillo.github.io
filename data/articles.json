@@ -59,28 +59,43 @@
         {
             "id":3,
             "folder":"/articles/most-recent-title/",
-            "showcase":"/img/coming-soon.png",
+            "images":[],
             "date":"10-12-2019",
             "title":"Most Recent Title",
             "subtitle":"Let's change this subtitle just for the heck of it.",
-            "body":"<p>This is my most recent article and it is really a doozy.  All of these have been written to test a simple JSON \"database\" that will allow me to manage my posts and other content dynamically!</p>"
+            "bodyElements":[
+                {
+                    "type":"p",
+                    "contents":"This is my most recent article and it is really a doozy.  All of these have been written to test a simple JSON \"database\" that will allow me to manage my posts and other content dynamically!"
+                }
+            ]
         },
         {
             "id":2,
             "folder":"/articles/second-article-title/",
-            "showcase":"/img/coming-soon.png",
+            "images":[],
             "date":"10-06-2019",
             "title":"Second Article Title",
             "subtitle":"For a bit more description, here's a Subtitle",
-            "body":"<p>This is the body of another article that I've written.  This one definitely has some good information and I hope you use it well!  I'm really giving this my all and I am enjoying myself.</p>"
+            "bodyElements":[
+                {
+                    "type":"p",
+                    "contents":"This is the body of another article that I've written.  This one definitely has some good information and I hope you use it well!  I'm really giving this my all and I am enjoying myself."
+                }
+            ]
         },
         {
             "id":1,
             "folder":"/articles/first-article-title/",
-            "showcase":"/img/coming-soon.png",
+            "images":[],
             "date":"10-01-2019",
             "title":"First Article Title",
             "subtitle":"For a bit more description, here's a Subtitle",
-            "body":"<p>This is the body of an article that I've written.  It has a lot of good information in it and I hope it will help you while you are doing some activity that this article is about.</p>"
+            "bodyElements":[
+                {
+                    "type":"p",
+                    "contents":"This is the body of an article that I've written.  It has a lot of good information in it and I hope it will help you while you are doing some activity that this article is about."
+                }
+            ]
         }
 ]}

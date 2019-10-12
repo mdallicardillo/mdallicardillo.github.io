@@ -1,34 +1,46 @@
 function retrieveArticlePreviews(articlesToShow, articleID) {
-    let htmlArticles;
+    let htmlPreviews;
     $.getJSON('/data/articles.json', function(data){
         let objArticles = data.articles;
 
         for (i=0; i < articlesToShow; i++) {
             let oArticle = objArticles[i];
+            let preview_img;
+            let oBodyElements = oArticle.bodyElements;
+
             if(oArticle != undefined && oArticle.id != articleID)
             {
-                let htmlArticle =
+                if (oArticle.images.length > 0) preview_img = oArticle.images[0].src;
+                else preview_img = "/img/coming-soon.png"
+
+                let htmlPreview =
                 `<article class="article_preview">
                 <div class="div_previewImage">
-                    <a href="${oArticle.folder}"><img src="${oArticle.showcase}"/>
+                    <a href="${oArticle.folder}"><img src="${preview_img}"/>
                 </div>
                 <div class="div_previewText">
-                    <a href="${oArticle.folder}"><h2><em>${oArticle.title}</em></h2></a>
-                    <p>${oArticle.body.substring(3, 150) + "..."}</p>
-                </div>
-                </article>`;
+                    <a href="${oArticle.folder}"><h2><em>${oArticle.title}</em></h2></a>`;
                 
-                // additional fields for template literal if desired.
-                // <a href=${oArticle.folder}><h2><em>${oArticle.title}</em></h2></a>
-                //     <h3>${oArticle.subtitle}</h3>
-                //     <time datetime="${oArticle.date}">${new Date(oArticle.date).toDateString()}</time>
-                //     <p>${oArticle.body}</p>
-
-                if (htmlArticles === undefined) {htmlArticles = htmlArticle;}
-                else {htmlArticles = htmlArticles + htmlArticle;}
+                let bodyWritten = false;
+                for (n=0; n <oBodyElements.length; n++)
+                {
+                    oBodyElement = oBodyElements[n];
+                    if (oBodyElement.type === "p" && oBodyElement.contents.length >= 150)
+                    {
+                        htmlPreview += `<p>${oBodyElement.contents.substring(0, 150)}...</p>`;
+                        bodyWritten = true;
+                        break;
+                    }
+                }
+                if (!bodyWritten) htmlPreview += `<p>${oBodyElements[0].contents}...</p>`;
+                    
+                htmlPreview += `</div></article>`;
+                
+                if (htmlPreviews === undefined) htmlPreviews = htmlPreview;
+                else htmlPreviews += htmlPreview;
             }
         }
-        document.getElementById("div_articlePreviews").innerHTML = htmlArticles;
+        document.getElementById("div_articlePreviews").innerHTML = htmlPreviews;
     });
 }
 
