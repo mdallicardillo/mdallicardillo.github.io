@@ -8,22 +8,19 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     font-size:16px;
     line-height:1.2em;
-    /* min-height:100%; */
-    margin:0;
-}
-.div_bg{
-    background: url('/img/old-vise.jpg') no-repeat fixed center; 
+    min-height:100%;
+    background: url('/img/workbench2.jpg') no-repeat fixed center; 
     background-size:cover;
-    height:100vh;
+    height:100%;
     position:relative;
     z-index: 1;
 }
 
-.div_bg::before{
+body::before{
     content: "";
     left:0;
     top:0;
-    background: rgba(118, 135, 151, 0.705);
+    background: rgba(51, 51, 51, 0.7);
     width:100%;
     height:100%;
     position: absolute;
@@ -41,43 +38,76 @@ body{
 }
 
 .div_content{
-    min-height:91.2%;
+    height:100%;
     width:95%;
     margin:auto;
     background:none;
 }
 
-#showcase{
-    background-image:url('/img/old-vise.jpg');
-    background-position:center center;
-    background-size:cover;
-    background-repeat:no-repeat;
-    border-radius:15px;
-    min-height:450px;
-    margin:5px 0px 15px 0px;
+#h1_showcaseHeading{
+    font-size: 82px;
+    line-height:1em;
     text-align:center;
+    padding:200px 0px;
 }
 
-#showcase h1{
-    color:white;
-    font-size:25px;
-    line-height:1.6em;
-    padding-top:30px;
+#section_showcase{
+    margin-bottom:-4px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#333;
+}
+
+.div_showcaseText{
+    flex-basis: 50%;
+    text-align:center;
+    background: #333;
+}
+
+.div_showcaseText p{
+    position:relative;
+    font-size:48px;
+    margin-left:10px;
+    margin-bottom:15px;
+    line-height:1.2em;
+}
+
+.div_showcaseText p::before{
+    content:"";
+    background:#527EAA;
+    left: 3%;
+    width:10px;
+    height: 100%;
+    position:absolute;
+
+}
+
+.div_showcaseImg{
+    flex-basis: 50%;
+    /* border-radius:50%; */
+    /* height:500px; */
+}
+
+.div_showcaseImg img{
+    width:100%;
+    /* border-radius:30%; */
 }
 
 #section_main{
     /* color:#333333; */
     float:left;
     width:70%;
-    padding: 0 30px;
+    margin: 15px 0px 15px 0px;
     box-sizing:border-box;
 }
 
 #aside_main{
     float:right;
     width:30%;
-    background:#778899;
+    background:#333;
     color:#f4f4f4;
+    margin:15px 0px 15px 0px;
     padding:10px;
     box-sizing: border-box;
     border-radius:10px;
@@ -86,11 +116,16 @@ body{
 
 @media(min-width:1100px){
     .container{
-        max-width:1100px;
+        max-width:1400px;
     }
 }
 
 @media(max-width:600px){
+    #section_showcase{
+        width:100%;
+        float:none;
+        display:inline;
+    }
     #section_main{
         width:100%;
         float:none;

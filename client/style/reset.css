@@ -4,10 +4,10 @@
 
 body,
 body *{
-    margin:unset;
-    box-sizing:border-box;
-    padding:unset;
-    font-size:unset;
-    color:unset;
+    margin:          unset;
+    padding:         unset;
+    font-size:       unset;
+    color:           unset;
     text-decoration: unset;
+    box-sizing:      border-box;
 }
