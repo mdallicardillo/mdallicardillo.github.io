@@ -12,7 +12,7 @@
     font-size:46px;
     float:left;
     padding-left:35px;
-    margin-top:10px;
+    margin-top:5px;
     /* min-width:35%; */
     /* border:1px #778899 solid; */
 }
@@ -51,27 +51,7 @@
     left:103%;
 }
 
-@media(max-width:920px){
-    #nav_main{
-        width:100%;
-        float:none;
-        text-align: center;
-        padding:1px 0px 0px 0px;
-    }
-
-    #nav_main a{
-        padding:16px 20px;
-        margin-left:-5px;
-        /* border: 1px solid #778899; */
-    }
-
-    #header_main{
-        width:100%;
-        float:none;
-        padding-left:0px;
-        padding-bottom:5px;
-        text-align: center;
-    }
+@media(max-width:600px){
 
     #header_main h1::before{
         /* padding:0px 4px; */
@@ -90,7 +70,6 @@
 
     }
     
-
         /* Use this is setting the header for position:fixed; */
     /* #showcase{
         margin-top:114px

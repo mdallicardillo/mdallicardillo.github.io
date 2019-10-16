@@ -3,7 +3,7 @@
     /* background:black; */
     float:right;
     /* text-align:right; */
-    min-width:15%;
+    /* min-width:15%; */
     /* height:100px; */
     /* border:1px #778899 dotted; */
     padding:10px 0px;
@@ -54,9 +54,30 @@
     transform:scaleX(1);
 }
 
+#nav_main a span.icon{
+    display:none;
+}
+
 body.home a.home, body.articles a.articles, body.about a.about, body.contact a.contact{
     background-color:#527EAA;
     color: #333;
     pointer-events: none;
     cursor: default;
+}
+
+@media(max-width:600px){
+
+    #nav_main a{
+        padding:16px 20px;
+        margin-left:-5px;
+        /* border: 1px solid #778899; */
+    }
+
+    #nav_main a span.icon{
+        display:inline;
+    }
+
+    #nav_main a span.text{
+        display:none;
+    }
 }

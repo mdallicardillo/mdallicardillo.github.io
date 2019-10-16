@@ -1,8 +1,9 @@
 #div_footer{
     background:#333;
     position:relative;
-    /* margin-top:70px; */
+    margin-top:30px;
     height:50px;
+    
 }
 
 /* #footer_content{
@@ -16,8 +17,10 @@
 
 #footer_copyright{
     /* background:#4b3a26; */
+    display:flex;
     color:#fff;
-    text-align:center;
+    align-items:center;
+    justify-content: center;
     height:50px;
     width:100%;
     bottom:0px;

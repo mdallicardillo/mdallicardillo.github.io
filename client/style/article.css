@@ -1,12 +1,12 @@
 body{
-    background:rgba(51, 51, 51, 0.7);
+    /* background:rgba(51, 51, 51, 0.7); */
 }
 
 #aside_previews{
     flex-basis:34%;
-    border:3px solid #778899;
+    border:3px solid #527EAA;
     border-radius:12px;
-    padding:5px;
+    padding:10px;
 }
 
 #article_main{
@@ -44,11 +44,11 @@ body{
     line-height:.8em;
     padding:1.5% 3%;
     /* margin:25px 0px; */
-    color:#222222;
+    color:#527EAA;
 }
 #div_mainText h3,time{
     padding:1.5% 3%;
-    color:#bebebe;
+    color:#868686;
 }
 
 .article_preview{
@@ -56,7 +56,7 @@ body{
     /* border:1px solid black; */
 }
 
-@media(min-width:512px){
+@media(min-width:1000px){
     .div_content{
     display:flex;
     align-items:flex-start;
