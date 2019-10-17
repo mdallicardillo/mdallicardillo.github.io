@@ -3,13 +3,16 @@ function retrieveArticlePreviews(articlesToShow, articleID) {
     $.getJSON('/data/articles.json', function(data){
         let objArticles = data.articles;
 
+        if (articlesToShow == undefined) articlesToShow = 16;
+
         for (i=0; i < articlesToShow; i++) {
             let oArticle = objArticles[i];
             let preview_img;
-            let oBodyElements = oArticle.bodyElements;
-
+            
             if(oArticle != undefined && oArticle.id != articleID)
             {
+                let oBodyElements = oArticle.bodyElements;
+
                 if (oArticle.images.length > 0) preview_img = oArticle.images[0].src;
                 else preview_img = "/img/coming-soon.png"
 

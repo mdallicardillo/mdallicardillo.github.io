@@ -45,7 +45,7 @@
     background:#527EAA;
     z-index: -1;
     transition: transform 0.6s;
-    transform-origin: 0 ;
+    transform-origin: 0;
     transition-timing-function: cubic-bezier(.5, 1.6, 0.4, 0.7);
     transform:scaleX(0);
 }
@@ -58,14 +58,32 @@
     display:none;
 }
 
-body.home a.home, body.articles a.articles, body.about a.about, body.contact a.contact{
+body.home a.home, body.about a.about, body.articles a.articles, body.gallary a.gallary, body.contact a.contact{
     background-color:#527EAA;
     color: #333;
     pointer-events: none;
     cursor: default;
 }
 
+@media(max-width:425px){
+    #nav_main{
+        width:100%;
+        /* float:none; */
+        display:flex;
+        justify-content: center;
+    }
+}
+
 @media(max-width:600px){
+
+    #nav_main a::before{
+        transform-origin: top;
+        transform:scaleY(0);
+    }
+    
+    #nav_main a:hover::before{
+        transform:scaleY(1);
+    }
 
     #nav_main a{
         padding:16px 20px;

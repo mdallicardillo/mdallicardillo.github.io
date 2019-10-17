@@ -2,6 +2,41 @@
     "articles": [
         {
             "id":4,
+            "folder":"/articles/my-old-block-plane/",
+            "images":[
+                {
+                    "src":"/img/gp-block-plane-original.jpg",
+                    "caption":"My Grandpas well-used block plane."
+                },
+                {
+                    "src":"/img/gp-block-plane-cleaned.jpg",
+                    "caption":"Nice and clean!"
+                },
+                {
+                    "src":"/img/gp-block-plane-cleaned-shaving.jpg",
+                    "caption":"Of course I have to sharpen the iron and give it a test before I could finish..."
+                },
+                {
+                    "src":"/img/gp-block-plane.jpg",
+                    "caption":"Cleaned, painted, sharpened.  Maybe I shouldn't have done all red?"
+                }
+            ],
+            "date":"2019-10-16",
+            "title":"Block Plane",
+            "subtitle":"Block Plane Subtitle",
+            "bodyElements":[
+                {
+                    "type":"p",
+                    "contents":"The is not something that I have a strong grasp on."
+                },
+                {
+                    "type":"p",
+                    "contents":"It's not something that I particularly like about myself.  I don't like needing to be reminded of something that <em>I</em> did.  Sure every once in a while it wouldn't be so bad, but it is a constant for me.  I forget life events easily, I forget people easily.  If I were asked about college I could give some highlights, highschool I could give less.  Forget about childhood, bits and pieces at this point."
+                }
+            ]
+        },
+        {
+            "id":3,
             "folder":"/articles/website-from-scratch/",
             "images":[
                 {
@@ -54,20 +89,6 @@
                     "contents":"So, this is the origin story of this site.  As I write this, my first post, the site isn't even close to what I would consider complete.  The layout is constantly evolving, the color scheme is highly questionable, and most of the links do nothing because I've spent so much time architecting and re-architecting the structure and function of the site that it's all I can do to refine the three pages that currently exist.  If you've made it this far, I'd really like to <strong>thank you for reading!</strong>  I don't know when I'll find the time to write another post between improving the site itself and the rest of my life, but I hope by then it looks better than this..."
                 }
 
-            ]
-        },
-        {
-            "id":3,
-            "folder":"/articles/most-recent-title/",
-            "images":[],
-            "date":"10-16-2019",
-            "title":"Most Recent Title",
-            "subtitle":"Let's change this subtitle just for the heck of it.",
-            "bodyElements":[
-                {
-                    "type":"p",
-                    "contents":"This is my most recent article and it is really a doozy.  All of these have been written to test a simple JSON \"database\" that will allow me to manage my posts and other content dynamically!"
-                }
             ]
         },
         {

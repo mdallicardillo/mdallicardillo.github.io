@@ -51,6 +51,17 @@
     left:103%;
 }
 
+@media(max-width:425px){
+    #header_main{
+        width:100%;
+        float:none;
+        padding-left:0;
+        display:flex;
+        justify-content: center;
+    }
+
+}
+
 @media(max-width:600px){
 
     #header_main h1::before{
