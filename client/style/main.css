@@ -1,5 +1,5 @@
 html{
-    min-height:100%;
+    height:100%;
 }
 
 body{
@@ -11,7 +11,6 @@ body{
     min-height:100%;
     background: url('/img/workbench2.jpg') no-repeat fixed center; 
     background-size:cover;
-    height:100%;
     position:relative;
     z-index: 1;
 }
@@ -40,7 +39,7 @@ body::before{
 .div_content{
     height:100%;
     width:95%;
-    margin:auto;
+    padding-bottom:10px;
     background:none;
 }
 

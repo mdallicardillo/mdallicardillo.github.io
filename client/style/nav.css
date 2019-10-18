@@ -58,7 +58,7 @@
     display:none;
 }
 
-body.home a.home, body.about a.about, body.articles a.articles, body.gallary a.gallary, body.contact a.contact{
+body.home a.home, body.about a.about, body.articles a.articles, body.gallery a.gallery, body.contact a.contact{
     background-color:#527EAA;
     color: #333;
     pointer-events: none;

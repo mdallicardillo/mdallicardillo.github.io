@@ -1,5 +1,5 @@
 
-================ Home Page:
+================= Home Page =================
 
 Signature logo in top left, nav menu top right (eventually collapse into "hamburger" menu for narrow windows.)
 
@@ -7,11 +7,11 @@ Showcase area, round portrait of self,
 
 Blog previews -- Dynamically created using javascript and a preview.JSON file popuated with the most recent articles
 
-Social Media links
+Social Media links in footer
 
 Copyright
 
-================ Blog Page:
+================= Articles Page =================
 
 Same header (indicating blog is selected)
 
@@ -23,6 +23,12 @@ socal media links
 
 copyright
 
-================ About Page:
+================= Gallary Page =================
+
+a page with category selectors which re-populate the page using javascript based on the category selected.
+
+Use a return button that redirects to the same page to clear images and bring the categories back
+
+================ About Page =================
 
 Picture of me and a few paragraphs of interests, motivations and aspirations.  Much of this is uncertain...
