@@ -1,7 +1,54 @@
 { 
     "articles": [
         {
-            "id":4,
+            "id":3,
+            "folder":"/articles/wen-pr19-restoration/",
+            "images":[
+                {
+                    "src":"/img/wen-pr19-outside.jpg",
+                    "caption":"After cleaning, lubrication, reassembly and painting, this old belt sander is ready for regular use!"
+                },
+                {
+                    "src":"/img/wen-pr19-inside.jpg",
+                    "caption":"The roller mechanism shroud was so full of grime when I first looked in it was hard to tell what was what."
+                },
+                {
+                    "src":"/img/wen-pr19-pre-assembly.jpg",
+                    "caption":"The final three components to be assembled after painting and protection of the baseplate."
+                }
+            ],
+            "date":"10-23-2019",
+            "title":"Restoring a WEN PR19 Belt Sander",
+            "subtitle":"An old belt sander given a fresh coat of paint, and a new life to go along with it.",
+            "bodyElements":[
+                {
+                    "type":"p",
+                    "contents":"Let's get the sentimental stuff out of the way..."
+                },
+                {
+                    "type":"p",
+                    "contents":"This old belt sander belonged to my grandfather.  There is a special connection to him that I feel while working on (or with) his old tools.  My relationship with him when he was alive wasn't bad, I supposed the best word to describe it would be <q>limited.</q>  He was a kind and soft-spoken man, but I didn't see him much.  The time I did spend with him was usually pass by listening to his stories, which he was full of.  He was a mechanic by trade, working on battleships in WWII, and all manner of machines afterwards."
+                },
+                {
+                    "type":"p",
+                    "contents":"After buying my first (and current at time of writing) house, each time I saw my grandfather he would have a plastic tote, old wooden box, or duffle bag full of his old tools.  He wasn't working anymore, and they occupied most of the storage space he had, having amassed them over a lifetime.  We would sit down and go through them all each time.  Most I knew, but some I didn't.  They all had a story.  I could never remember them all, but I am glad to have had the time with him."
+                },
+                {
+                    "type":"embed",
+                    "contents":"<iframe class=\"iframe_video\" src=\"https://www.youtube.com/embed/1ivED-AcioU\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+                },
+                {
+                    "type":"p",
+                    "contents":"Here is a short video detailing the final re-assembly."
+                },
+                {
+                    "type":"p",
+                    "contents":"Unfortunately, when I decided to document this I had already completed most of it, so there are no pictures of the tool before.  The now orange shroud was raw metal and growing a lovely white fuzz, the bottom plate that the belt slides on had completely rusted over, and it was full of sawdust and grease beyond all recognition."
+                }
+            ]
+        },
+        {
+            "id":2,
             "folder":"/articles/my-old-block-plane/",
             "images":[
                 {
@@ -36,7 +83,7 @@
             ]
         },
         {
-            "id":3,
+            "id":1,
             "folder":"/articles/website-from-scratch/",
             "images":[
                 {
@@ -89,20 +136,6 @@
                     "contents":"So, this is the origin story of this site.  As I write this, my first post, the site isn't even close to what I would consider complete.  The layout is constantly evolving, the color scheme is highly questionable, and most of the links do nothing because I've spent so much time architecting and re-architecting the structure and function of the site that it's all I can do to refine the three pages that currently exist.  If you've made it this far, I'd really like to <strong>thank you for reading!</strong>  I don't know when I'll find the time to write another post between improving the site itself and the rest of my life, but I hope by then it looks better than this..."
                 }
 
-            ]
-        },
-        {
-            "id":2,
-            "folder":"/articles/second-article-title/",
-            "images":[],
-            "date":"10-06-2019",
-            "title":"Second Article Title",
-            "subtitle":"For a bit more description, here's a Subtitle",
-            "bodyElements":[
-                {
-                    "type":"p",
-                    "contents":"This is the body of another article that I've written.  This one definitely has some good information and I hope you use it well!  I'm really giving this my all and I am enjoying myself."
-                }
             ]
         },
         {

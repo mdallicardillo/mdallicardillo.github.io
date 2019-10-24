@@ -78,7 +78,11 @@ function retrieveMainArticle(path) {
                     {
                         htmlArticle += `<img src="${oImages[img_count].src}">`;
                         img_count += 1;
-                    } 
+                    }
+                    else if (oBodyElement.type === "embed")
+                    {
+                        htmlArticle += `<div class="div_videoWrapper">${oBodyElement.contents}</div>`;
+                    }
                 }
                     // ${oArticle.body}
                 htmlArticle += `</div></article>`;
