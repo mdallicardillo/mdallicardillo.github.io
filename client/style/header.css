@@ -1,7 +1,7 @@
 
 #div_headNav{
     background-color:#333333;
-    margin-bottom: 1%;
+    /* margin-bottom: 1%; */
     /* margin-left:5%; */
     /* border-radius: 0px 0px 15px 15px; */
     /* line-height:1.6em; */
@@ -26,6 +26,7 @@
     border-right: 4px solid;
     border-radius:7%;
     border-color:#527EAA; */
+    border:1px;
 }
 
 #header_main h1::before, #header_main h1::after{
@@ -59,7 +60,6 @@
         display:flex;
         justify-content: center;
     }
-
 }
 
 @media(max-width:600px){
@@ -77,8 +77,7 @@
         background:#527EAA;
         border-radius:0 45% 45% 0;
         left:50%;
-        transform: translateX(38px)
-
+        transform: translateX(38px);
     }
     
         /* Use this is setting the header for position:fixed; */

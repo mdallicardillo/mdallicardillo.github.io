@@ -6,7 +6,7 @@
     /* min-width:15%; */
     /* height:100px; */
     /* border:1px #778899 dotted; */
-    padding:10px 0px;
+    padding:7px 0px 6px 0px;
     /* line-height:2; */
 }
 
@@ -86,7 +86,7 @@ body.home a.home, body.about a.about, body.articles a.articles, body.gallery a.g
     }
 
     #nav_main a{
-        padding:16px 20px;
+        padding:22px 22px;
         margin-left:-5px;
         /* border: 1px solid #778899; */
     }

@@ -2,9 +2,9 @@
     background:#333;
     position:absolute;
     display:flex;
-    height:50px;
+    height:60px;
     bottom:-60px;
-    width:100%
+    width:100%;
     /* left:0;
     right:0; */
     
@@ -25,6 +25,6 @@
     color:#fff;
     align-items:center;
     justify-content: center;
-    height:50px;
+    height:60px;
     width:100%;
 }

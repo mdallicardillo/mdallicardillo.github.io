@@ -1,6 +1,21 @@
 {
     "images":[
         {
+            "src":"/img/wen-pr19-pre-assembly.jpg",
+            "desc":"",
+            "cat":"gp-tools"
+        },
+        {
+            "src":"/img/wen-pr19-inside.jpg",
+            "desc":"",
+            "cat":"gp-tools"
+        },
+        {
+            "src":"/img/wen-pr19-outside.jpg",
+            "desc":"",
+            "cat":"gp-tools"
+        },
+        {
             "src":"/img/gp-block-plane-original.jpg",
             "desc":"",
             "cat":"gp-tools"
